@@ -3,4 +3,4 @@ According to Davis (1989), Technology Acceptance Model (TAM) is a capable of exp
 # Data Analysis:
 Analysis and data processing performed using IBM SPSS Statistics software.
 # Note:
-See full description of analysis in the ResearchGate (soon)
+Description of analysis in the ResearchGate (soon)
