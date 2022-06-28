@@ -8,7 +8,8 @@ output:
 ---
 
 # 1.1 Introduction
-> This analysis is an analysis that uses multiple linear regression. This analysis will be divided into two parts. The first part, which is this section, is carried out data input, view, validity, and reliability tests. 
+
+> This analysis is an analysis that uses multiple linear regression. This analysis will be divided into two parts. The first part, which is this section, is carried out data input, view, validity, and reliability tests.
 
 # 1.2 Analysis Object
 
@@ -156,7 +157,7 @@ statistics_UI <- function(dt_UI = vec_dtUI){
 statistics_UI()
 ```
 
-> Based on these data, the mean of the variable "I" = 17.18, the variable "PU" = 16.8, the variable "PE" = 17.3, and the variable "UI" = 16.21. All mean values of each variable are greater (>) than the resulting standard deviation. Therefore, the data obtained are homogeneous based on the comparison of the mean with the standard deviation. This means that the data values obtained from one another do not have a significant difference.
+> Based on these data, the mean of the variable "I" = 17.18, the variable "PU" = 16.8, the variable "PE" = 17.3, and the variable "UI" = 16.21. All mean values of each variable are greater (\>) than the resulting standard deviation. Therefore, the data obtained are homogeneous based on the comparison of the mean with the standard deviation. This means that the data values obtained from one another do not have a significant difference.
 
 ## 1.5.5 Instrument Test
 
@@ -192,7 +193,7 @@ alpha(valid_UI)
 
 ```
 
-> In the validity test, it can be seen in the Item statistics section -> raw.r. All indicator items of each variable have a value greater than [(r table)](https://docs.google.com/file/d/0B61KSjKBWIfsTjBpQVJqMXRtUnM/edit?resourcekey=0-2g4nzqZbpXryGHKY2jVdtA) with a significance level of 2-tailed (two-way) degree of freedom of 0.05 (5%) which is worth df = N-2 = 112-2 = 110, which is 0.186. This means that it can be concluded that all indicator items are **valid**.
+> In the validity test, it can be seen in the Item statistics section -\> raw.r. All indicator items of each variable have a value greater than [(r table)](https://docs.google.com/file/d/0B61KSjKBWIfsTjBpQVJqMXRtUnM/edit?resourcekey=0-2g4nzqZbpXryGHKY2jVdtA) with a significance level of 2-tailed (two-way) degree of freedom of 0.05 (5%) which is worth df = N-2 = 112-2 = 110, which is 0.186. This means that it can be concluded that all indicator items are **valid**.
 
 ### 2. Reliability Test
 
@@ -201,9 +202,10 @@ reli <- (select(my_data2, 1, 2, 3, 4))
 alpha(reli)
 ```
 
-> In the reliability test, it can be seen in the Reliability section if an item is dropped: -> raw_alpha. All variables have a value greater than Cronbach's Alpha which is worth 0.7 with a degree of freedom 0.05 (5%) [(based on nunnally's recommendations on the level of reliability in Early stage of research)](https://en.wikipedia.org/wiki/Cronbach%27s_alpha). This means that it can be concluded that all variables are **reliable**.
+> In the reliability test, it can be seen in the Reliability section if an item is dropped: -\> raw_alpha. All variables have a value greater than Cronbach's Alpha which is worth 0.7 with a degree of freedom 0.05 (5%) [(based on nunnally's recommendations on the level of reliability in Early stage of research)](https://en.wikipedia.org/wiki/Cronbach%27s_alpha). This means that it can be concluded that all variables are **reliable**.
 
 # 1.6 Info
+
 > The whole code I write is purely based on logic and things I remember in R. There is probably better code writing out there. Here is the R information I used.
 
 ```{r}
