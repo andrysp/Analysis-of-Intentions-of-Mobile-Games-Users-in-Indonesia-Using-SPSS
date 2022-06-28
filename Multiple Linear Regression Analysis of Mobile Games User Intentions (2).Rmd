@@ -1,0 +1,42 @@
+---
+title: "Multiple Linear Regression Analysis of Mobile Games User Intentions (2)"
+author: "Andry S."
+date: '2022-06-27'
+output: 
+  html_document: 
+    toc: yes
+---
+
+# Introduction
+> Bagian ini adalah lanjutan dari bagian pertama. Pada bagian ini dilakukan pengujian dan analisis dengan menggunakan metode regresi linier berganda. 
+
+# 1.1 Objek Analisis
+
+> Mobile games merupakan video games yang berevolusi seiring kemajuan teknologi pada smartphone sebagai perangkat utama dalam memainkannya. Kecanggihan tersebut membuat mobile games tidak hanya sebagai media hiburan, tetapi juga menghadirkan unsur kompetisi, sehingga dapat dimainkan secara offline atau online serta multiplayer dengan berbagai pemain di seluruh dunia. Keberhasilan mobile games dapat dilihat dari metrik unduhan yang dihasilkan dan seberapa sering pengguna bermain mobile games. Oleh karena itu, intensi pengguna dapat menjadi ukuran untuk mencapai uduhan dan penggunaan yang baik.
+
+# 1.2 Variabel
+
+> Untuk mencapai analisis yang optimal, diperlukan penggunaan variabel lain seperti Interest, Perception of Usability, dan Perception of Ease sebagai variabel independen yang mempengaruhi variabel dependen yaitu User Intentions. Penggunaan variabel tersebut didasari dengan teori Technology Acceptance Model (TAM) oleh [Davis, Bagozzi, and Warshaw (1989).](https://scholar.google.com/citations?view_op=view_citation&hl=id&user=rKH2D8MAAAAJ&citation_for_view=rKH2D8MAAAAJ:u-x6o8ySG0sC) Oleh karena itu, pada analisis ini variabel yang digunakan dapat diproksikan sebagai berikut: Interest (X~1~) = I, Perception of Usability (X~2~) = PU, Perception of Ease (X~3~) = PE, and User Intentions (Y) = UI
+
+# 1.3 Hipotesis
+
+> **H~1~** = Pengaruh Interest terhadap User Intentions, **H~2~** = Pengaruh Perception of Usability terhadap User Intentions, **H~3~** = Pengaruh Perception of Ease terhadap User Intentions, **H~4~** = Pengaruh simultan Interest, Perception of Usability, Perception of Ease terhadap User Intentions
+
+# 1.4 Analysis Methodology
+
+> Analisis ini adalah kuantitatif yang diselasaikan dengan statistik dengan menggunakan model Multiple Linear Regression Analysis. Hal tersebut digunakan sebagai metode untuk memprediksi, menghasilkan persamaan, dan menjawab hipotesis.
+
+## 1.6.2 Classic Assumption Test
+### 1. Normality Test
+### 2. Multicollinearity Test
+### 3. Heteroscedasticity Test
+
+## 1.6.3 Correlation Coefficient (R) Test
+
+## 1.6.4 Coefficient of Determination (R2) Test
+
+## 1.6.5 Multiple Linear Regression Test
+
+## 1.6.6 Hypothesis Test
+### 1. F Test (Fit Model)
+### 2. t Test
