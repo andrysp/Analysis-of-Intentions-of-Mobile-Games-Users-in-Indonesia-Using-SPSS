@@ -11,9 +11,9 @@
 
 <meta name="author" content="Andry S." />
 
-<meta name="date" content="2022-06-27" />
+<meta name="date" content="2022-07-01" />
 
-<title>Multiple Linear Regression Analysis of Mobile Games User Intentions (2)</title>
+<title>Analysis of Mobile Games User Intentions in Indonesia (Multiple Linear Regression)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -363,54 +363,53 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">Multiple Linear Regression Analysis of
-Mobile Games User Intentions (2)</h1>
+<h1 class="title toc-ignore">Analysis of Mobile Games User Intentions in
+Indonesia (Multiple Linear Regression)</h1>
 <h4 class="author">Andry S.</h4>
-<h4 class="date">2022-06-27</h4>
+<h4 class="date">2022-07-01</h4>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#objek-analisis">1.1 Objek Analisis</a></li>
-<li><a href="#variabel">1.2 Variabel</a></li>
-<li><a href="#hipotesis">1.3 Hipotesis</a></li>
-<li><a href="#analysis-methodology">1.4 Analysis Methodology</a>
+<li><a href="#objek-analisis">Objek Analisis</a></li>
+<li><a href="#variabel">Variabel</a></li>
+<li><a href="#hipotesis">Hipotesis</a></li>
+<li><a href="#analysis-methodology">Analysis Methodology</a></li>
+<li><a href="#data-input-view">Data Input &amp; View</a>
 <ul>
-<li><a href="#classic-assumption-test">1.6.2 Classic Assumption Test</a>
+<li><a href="#statistics-description">1 Statistics Description</a></li>
+<li><a href="#instrument-test-validity-reliability">2 Instrument Test:
+Validity &amp; Reliability</a>
 <ul>
-<li><a href="#normality-test">1. Normality Test</a></li>
-<li><a href="#multicollinearity-test">2. Multicollinearity Test</a></li>
-<li><a href="#heteroscedasticity-test">3. Heteroscedasticity
+<li><a href="#validity">2.1 Validity</a></li>
+<li><a href="#reliability">2.2 Reliability</a></li>
+</ul></li>
+<li><a href="#classic-assumption-test">3 Classic Assumption Test</a>
+<ul>
+<li><a href="#normality-test">3.1 Normality Test</a></li>
+<li><a href="#multicollinearity-test">3.2 Multicollinearity
+Test</a></li>
+<li><a href="#heteroscedasticity-test">3.3 Heteroscedasticity
 Test</a></li>
 </ul></li>
-<li><a href="#correlation-coefficient-r-test">1.6.3 Correlation
-Coefficient (R) Test</a></li>
-<li><a href="#coefficient-of-determination-r2-test">1.6.4 Coefficient of
+<li><a href="#correlation-coefficient-r-test">4 Correlation Coefficient
+(R) Test</a></li>
+<li><a href="#coefficient-of-determination-r2-test">5 Coefficient of
 Determination (R2) Test</a></li>
-<li><a href="#multiple-linear-regression-test">1.6.5 Multiple Linear
+<li><a href="#multiple-linear-regression-test">6 Multiple Linear
 Regression Test</a></li>
-<li><a href="#hypothesis-test">1.6.6 Hypothesis Test</a>
+<li><a href="#hypothesis-test">7 Hypothesis Test</a>
 <ul>
-<li><a href="#f-test-fit-model">1. F Test (Fit Model)</a></li>
-<li><a href="#t-test">2. t Test</a></li>
+<li><a href="#f-test-fit-model">7.1 F Test (Fit Model)</a></li>
+<li><a href="#t-test">7.2 t Test</a></li>
 </ul></li>
 </ul></li>
 </ul>
 </div>
 
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<blockquote>
-<p>Bagian ini adalah lanjutan dari bagian pertama. Pada bagian ini
-dilakukan pengujian dan analisis dengan menggunakan metode regresi
-linier berganda.</p>
-</blockquote>
-</div>
 <div id="objek-analisis" class="section level1">
-<h1>1.1 Objek Analisis</h1>
-<blockquote>
+<h1>Objek Analisis</h1>
 <p>Mobile games merupakan video games yang berevolusi seiring kemajuan
 teknologi pada smartphone sebagai perangkat utama dalam memainkannya.
 Kecanggihan tersebut membuat mobile games tidak hanya sebagai media
@@ -420,70 +419,177 @@ pemain di seluruh dunia. Keberhasilan mobile games dapat dilihat dari
 metrik unduhan yang dihasilkan dan seberapa sering pengguna bermain
 mobile games. Oleh karena itu, intensi pengguna dapat menjadi ukuran
 untuk mencapai uduhan dan penggunaan yang baik.</p>
-</blockquote>
 </div>
 <div id="variabel" class="section level1">
-<h1>1.2 Variabel</h1>
-<blockquote>
+<h1>Variabel</h1>
 <p>Untuk mencapai analisis yang optimal, diperlukan penggunaan variabel
 lain seperti Interest, Perception of Usability, dan Perception of Ease
 sebagai variabel independen yang mempengaruhi variabel dependen yaitu
 User Intentions. Penggunaan variabel tersebut didasari dengan teori
 Technology Acceptance Model (TAM) oleh <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=id&amp;user=rKH2D8MAAAAJ&amp;citation_for_view=rKH2D8MAAAAJ:u-x6o8ySG0sC">Davis,
 Bagozzi, and Warshaw (1989).</a> Oleh karena itu, pada analisis ini
-variabel yang digunakan dapat diproksikan sebagai berikut: Interest
-(X<sub>1</sub>) = I, Perception of Usability (X<sub>2</sub>) = PU,
-Perception of Ease (X<sub>3</sub>) = PE, and User Intentions (Y) =
-UI</p>
-</blockquote>
+variabel yang digunakan dapat diproksikan sebagai berikut:</p>
+<ul>
+<li>Interest (X1) = I</li>
+<li>Perception of Usability (X2) = PU</li>
+<li>Perception of Ease (X3) = PE</li>
+<li>User Intentions (Y) = UI</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Variabel</th>
+<th align="center">Indokator</th>
+<th align="center">Total_Indikator</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">I</td>
+<td align="center">I1.1</td>
+<td align="center">4</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">I1.2</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">I1.3</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">I1.4</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">PU</td>
+<td align="center">PU1.1</td>
+<td align="center">4</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">PU1.2</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">PU1.3</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">PU1.4</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">PE</td>
+<td align="center">PE1.1</td>
+<td align="center">4</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">PE1.2</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">PE1.3</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">PE1.4</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">UI</td>
+<td align="center">UI1</td>
+<td align="center">4</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">UI2</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">UI3</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">UI4</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="hipotesis" class="section level1">
-<h1>1.3 Hipotesis</h1>
-<blockquote>
-<p><strong>H<sub>1</sub></strong> = Pengaruh Interest terhadap User
-Intentions, <strong>H<sub>2</sub></strong> = Pengaruh Perception of
-Usability terhadap User Intentions, <strong>H<sub>3</sub></strong> =
-Pengaruh Perception of Ease terhadap User Intentions,
-<strong>H<sub>4</sub></strong> = Pengaruh simultan Interest, Perception
-of Usability, Perception of Ease terhadap User Intentions</p>
-</blockquote>
+<h1>Hipotesis</h1>
+<ul>
+<li><strong>H1</strong> = Pengaruh Interest terhadap User
+Intentions</li>
+<li><strong>H2</strong> = Pengaruh Perception of Usability terhadap User
+Intentions</li>
+<li><strong>H3</strong> = Pengaruh Perception of Ease terhadap User
+Intentions</li>
+<li><strong>H4</strong> = Pengaruh simultan Interest, Perception of
+Usability, Perception of Ease terhadap User Intentions</li>
+</ul>
 </div>
 <div id="analysis-methodology" class="section level1">
-<h1>1.4 Analysis Methodology</h1>
-<blockquote>
+<h1>Analysis Methodology</h1>
 <p>Analisis ini adalah kuantitatif yang diselasaikan dengan statistik
 dengan menggunakan model Multiple Linear Regression Analysis. Hal
 tersebut digunakan sebagai metode untuk memprediksi, menghasilkan
-persamaan, dan menjawab hipotesis.</p>
-</blockquote>
+persamaan, dan menjawab hipotesis. Data sets bertipe data primer dari
+survei dengan skala Likert.</p>
+</div>
+<div id="data-input-view" class="section level1">
+<h1>Data Input &amp; View</h1>
+<div id="statistics-description" class="section level2">
+<h2>1 Statistics Description</h2>
+</div>
+<div id="instrument-test-validity-reliability" class="section level2">
+<h2>2 Instrument Test: Validity &amp; Reliability</h2>
+<div id="validity" class="section level3">
+<h3>2.1 Validity</h3>
+</div>
+<div id="reliability" class="section level3">
+<h3>2.2 Reliability</h3>
+</div>
+</div>
 <div id="classic-assumption-test" class="section level2">
-<h2>1.6.2 Classic Assumption Test</h2>
+<h2>3 Classic Assumption Test</h2>
 <div id="normality-test" class="section level3">
-<h3>1. Normality Test</h3>
+<h3>3.1 Normality Test</h3>
 </div>
 <div id="multicollinearity-test" class="section level3">
-<h3>2. Multicollinearity Test</h3>
+<h3>3.2 Multicollinearity Test</h3>
 </div>
 <div id="heteroscedasticity-test" class="section level3">
-<h3>3. Heteroscedasticity Test</h3>
+<h3>3.3 Heteroscedasticity Test</h3>
 </div>
 </div>
 <div id="correlation-coefficient-r-test" class="section level2">
-<h2>1.6.3 Correlation Coefficient (R) Test</h2>
+<h2>4 Correlation Coefficient (R) Test</h2>
 </div>
 <div id="coefficient-of-determination-r2-test" class="section level2">
-<h2>1.6.4 Coefficient of Determination (R2) Test</h2>
+<h2>5 Coefficient of Determination (R2) Test</h2>
 </div>
 <div id="multiple-linear-regression-test" class="section level2">
-<h2>1.6.5 Multiple Linear Regression Test</h2>
+<h2>6 Multiple Linear Regression Test</h2>
 </div>
 <div id="hypothesis-test" class="section level2">
-<h2>1.6.6 Hypothesis Test</h2>
+<h2>7 Hypothesis Test</h2>
 <div id="f-test-fit-model" class="section level3">
-<h3>1. F Test (Fit Model)</h3>
+<h3>7.1 F Test (Fit Model)</h3>
 </div>
 <div id="t-test" class="section level3">
-<h3>2. t Test</h3>
+<h3>7.2 t Test</h3>
 </div>
 </div>
 </div>
