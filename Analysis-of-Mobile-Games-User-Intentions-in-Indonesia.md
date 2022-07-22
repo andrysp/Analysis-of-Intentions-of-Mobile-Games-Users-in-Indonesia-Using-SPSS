@@ -447,10 +447,6 @@ hist(myreg$residuals, main = "Histogram Regression Model")
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
-This is the result:
-
--Histogram Picture-
-
 Histogram on the “Regression Model” shows the assumption that it is
 normally distributed.
 
@@ -462,10 +458,6 @@ plot(myreg)
 ```
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
-
-This is the result:
-
--Plot 1 Picture-
 
 The Normal Q-Q graph shows that the plots are close to a linear line, so
 it can be assumed that the model is normally distributed.
@@ -530,10 +522,6 @@ plot(myreg)
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
-This is the result:
-
--Plot 1 Picture-
-
 The Residuals vs Fitted graph shows that the plots no particular
 pattern. Therefore, there is no symptom of heteroscedasticity.
 
@@ -544,10 +532,6 @@ plot(myreg$fitted.values, myreg$residuals,
 ```
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
-
-This is the result:
-
--Plot 2 Picture-
 
 The result it’s same. The plots no particular pattern. Therefore, there
 is no symptom of heteroscedasticity.
@@ -641,10 +625,6 @@ library("ggpubr")
     ## 
     ##     %+%, alpha
 
-This is the result:
-
--Plot 3 Picture-
-
 We can see the result of scatterplots for all variables with the
 correlation (r/R) version.
 
@@ -660,10 +640,6 @@ ggscatter(mydata2, x = "I", y = "UI",
     ## `geom_smooth()` using formula 'y ~ x'
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
-
-This is the result:
-
--Plot 4 Picture-
 
 We can see and customize the result of correlation scatterplots for each
 variable.
@@ -732,13 +708,13 @@ summary(myreg)
     ## Multiple R-squared:  0.5772, Adjusted R-squared:  0.5654 
     ## F-statistic: 49.14 on 3 and 108 DF,  p-value: < 2.2e-16
 
-**- Adjusted R-squared: 0.565**
+**Adjusted R-squared: 0.565**
 
 The independent variable (X) contributes to the dependent variable (Y)
 by 56%, the remaining 44% is the influence of other variables not tested
 in this analysis.
 
-**- F-statistic: 49.14, p-value: \< 2.2e-16 -\> p-value: \< 0.000**
+**F-statistic: 49.14, p-value: \< 2.2e-16 -\> p-value: \< 0.000**
 
 That is, the significance value on the ANOVA is 0.000 so that the
 independent variable (X) has a simultaneous effect on the variable (Y).
