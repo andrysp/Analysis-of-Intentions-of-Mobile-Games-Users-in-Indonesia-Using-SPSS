@@ -179,10 +179,6 @@ hist(mydata2$UI, main = "Histogram User Intention")
 hist(myreg$residuals, main = "Histogram Regression Model")
 ```
 
-This is the result:
-
--Histogram Picture-
-
 Histogram on the "Regression Model" shows the assumption that it is normally distributed.
 
 ```{r}
@@ -191,10 +187,6 @@ par(mfrow = c(2,2))
 
 plot(myreg)
 ```
-
-This is the result:
-
--Plot 1 Picture-
 
 The Normal Q-Q graph shows that the plots are close to a linear line, so it can be assumed that the model is normally distributed.
 
@@ -223,10 +215,6 @@ par(mfrow = c(2,2))
 plot(myreg)
 ```
 
-This is the result:
-
--Plot 1 Picture-
-
 The Residuals vs Fitted graph shows that the plots no particular pattern. Therefore, there is no symptom of heteroscedasticity.
 
 ```{r}
@@ -234,10 +222,6 @@ The Residuals vs Fitted graph shows that the plots no particular pattern. Theref
 plot(myreg$fitted.values, myreg$residuals,
      xlab = "Fiited Values", ylab = "Residuals", col.axis = "red")
 ```
-
-This is the result:
-
--Plot 2 Picture-
 
 The result it's same. The plots no particular pattern. Therefore, there is no symptom of heteroscedasticity.
 
@@ -286,10 +270,6 @@ pairs(mydata2[, c(1,2,3,4)])
 library("ggpubr")
 ```
 
-This is the result:
-
--Plot 3 Picture-
-
 We can see the result of scatterplots for all variables with the correlation (r/R) version.
 
 ```{r}
@@ -300,10 +280,6 @@ ggscatter(mydata2, x = "I", y = "UI",
           cor.coef = TRUE, cor.method = "pearson",
           xlab = "Mobile Games Interest", ylab = "Mobile Games User Intentions")
 ```
-
-This is the result:
-
--Plot 4 Picture-
 
 We can see and customize the result of correlation scatterplots for each variable.
 
@@ -326,11 +302,11 @@ myreg <- lm(UI ~ I + PU + PE, data = mydata2)
 summary(myreg)
 ```
 
-**- Adjusted R-squared: 0.565**
+**Adjusted R-squared: 0.565**
 
 The independent variable (X) contributes to the dependent variable (Y) by 56%, the remaining 44% is the influence of other variables not tested in this analysis.
 
-**- F-statistic: 49.14, p-value: < 2.2e-16 -> p-value: < 0.000**
+**F-statistic: 49.14, p-value: < 2.2e-16 -> p-value: < 0.000**
 
 That is, the significance value on the ANOVA is 0.000 so that the independent variable (X) has a simultaneous effect on the variable (Y). In other words, the regression model is fit and feasible.
 
