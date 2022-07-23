@@ -179,8 +179,6 @@ hist(mydata2$UI, main = "Histogram User Intention")
 hist(myreg$residuals, main = "Histogram Regression Model")
 ```
 
-![Histogram](Assets/figure-gfm/Histogram.png)
-
 Histogram on the "Regression Model" shows the assumption that it is normally distributed.
 
 ```{r}

@@ -447,8 +447,6 @@ hist(myreg$residuals, main = "Histogram Regression Model")
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
-![Histogram](Assets/figure-gfm/Histogram.png)
-
 Histogram on the “Regression Model” shows the assumption that it is
 normally distributed.
 
