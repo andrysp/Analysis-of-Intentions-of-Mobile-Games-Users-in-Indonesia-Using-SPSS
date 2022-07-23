@@ -1,5 +1,5 @@
 ---
-title: "Multiple Linear Regression-Analysis of Mobile Games User Intentions in Indonesia"
+title: "Analysis of Mobile Games User Intentions in Indonesia (Multiple Linear Regression)"
 output: github_document
 ---
 
@@ -179,6 +179,8 @@ hist(mydata2$UI, main = "Histogram User Intention")
 hist(myreg$residuals, main = "Histogram Regression Model")
 ```
 
+![Histogram](figure-gfm/Histogram.png)
+
 Histogram on the "Regression Model" shows the assumption that it is normally distributed.
 
 ```{r}
@@ -187,6 +189,8 @@ par(mfrow = c(2,2))
 
 plot(myreg)
 ```
+
+![Plot 1](figure-gfm/Plot-1.png)
 
 The Normal Q-Q graph shows that the plots are close to a linear line, so it can be assumed that the model is normally distributed.
 
@@ -215,6 +219,8 @@ par(mfrow = c(2,2))
 plot(myreg)
 ```
 
+![Plot 2](figure-gfm/Plot-2.png)
+
 The Residuals vs Fitted graph shows that the plots no particular pattern. Therefore, there is no symptom of heteroscedasticity.
 
 ```{r}
@@ -222,6 +228,8 @@ The Residuals vs Fitted graph shows that the plots no particular pattern. Theref
 plot(myreg$fitted.values, myreg$residuals,
      xlab = "Fiited Values", ylab = "Residuals", col.axis = "red")
 ```
+
+![Plot 3](figure-gfm/Plot-3.png)
 
 The result it's same. The plots no particular pattern. Therefore, there is no symptom of heteroscedasticity.
 
@@ -264,7 +272,11 @@ corr value is 0.683 (same with previous)
 ```{r}
 # We can also see it in multiple scatterplots
 pairs(mydata2[, c(1,2,3,4)])
+```
 
+![Plot 4](figure-gfm/Plot-4.png)
+
+```{r}
 # Correlation Visualization
 # install.packages("ggpubr") -> library for customize "ggplot2"
 library("ggpubr")
@@ -280,6 +292,8 @@ ggscatter(mydata2, x = "I", y = "UI",
           cor.coef = TRUE, cor.method = "pearson",
           xlab = "Mobile Games Interest", ylab = "Mobile Games User Intentions")
 ```
+
+![Plot 5](figure-gfm/Plot-5.png)
 
 We can see and customize the result of correlation scatterplots for each variable.
 

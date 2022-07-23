@@ -1,5 +1,5 @@
-Multiple Linear Regression-Analysis of Mobile Games User Intentions in
-Indonesia
+Analysis of Mobile Games User Intentions in Indonesia (Multiple Linear
+Regression)
 ================
 
 # Analysis Object
@@ -447,6 +447,8 @@ hist(myreg$residuals, main = "Histogram Regression Model")
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
+![Histogram](figure-gfm/Histogram.png)
+
 Histogram on the “Regression Model” shows the assumption that it is
 normally distributed.
 
@@ -458,6 +460,8 @@ plot(myreg)
 ```
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+![Plot 1](figure-gfm/Plot-1.png)
 
 The Normal Q-Q graph shows that the plots are close to a linear line, so
 it can be assumed that the model is normally distributed.
@@ -522,6 +526,8 @@ plot(myreg)
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
+![Plot 2](figure-gfm/Plot-2.png)
+
 The Residuals vs Fitted graph shows that the plots no particular
 pattern. Therefore, there is no symptom of heteroscedasticity.
 
@@ -532,6 +538,8 @@ plot(myreg$fitted.values, myreg$residuals,
 ```
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+
+![Plot 3](figure-gfm/Plot-3.png)
 
 The result it’s same. The plots no particular pattern. Therefore, there
 is no symptom of heteroscedasticity.
@@ -610,6 +618,8 @@ pairs(mydata2[, c(1,2,3,4)])
 
 ![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
+![Plot 4](figure-gfm/Plot-4.png)
+
 ``` r
 # Correlation Visualization
 # install.packages("ggpubr") -> library for customize "ggplot2"
@@ -639,7 +649,9 @@ ggscatter(mydata2, x = "I", y = "UI",
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](Analysis-of-Mobile-Games-User-Intentions-in-Indonesia_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+
+![Plot 5](figure-gfm/Plot-5.png)
 
 We can see and customize the result of correlation scatterplots for each
 variable.
